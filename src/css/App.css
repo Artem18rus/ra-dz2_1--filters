@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.app-filters {
+  display: flex;
+  column-gap: 5px;
+}
+
+.item-filters {
+  padding: 8px;
+  border: 1px solid;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.active-filter {
+  background: #555555;
+  color: white;
+}
+
+ul {
+  column-count: 3;
+  column-gap: 0;
+  padding-inline-start: 0;
+}
+
+li {
+  break-inside: avoid;
+  padding: 5px;
+}
+img {
+  width: 100%;
+  object-fit: contain;
+}
