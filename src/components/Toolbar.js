@@ -1,12 +1,14 @@
 import React from "react";
 
-function Toolbar(props) {
+function Toolbar({ filters, selected, onSelectFilter }) {
   return (
     <div className="app-filters">
-      {props.filters.map((item) => (
+      {filters.map((item) => (
         <button
-          onClick={() => props.onSelectFilter(item)}
-          className="item-filters"
+          onClick={() => onSelectFilter(item)}
+          className={`item-filters ${
+            selected === item
+          } ? 'filter-selected' : '' `}
           key={item}
         >
           {item}
